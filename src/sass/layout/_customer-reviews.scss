@@ -96,12 +96,7 @@ a {
   padding-left: 15px;
   padding-right: 8px;
 
-  background: repeating-linear-gradient(
-    to top,
-    #e1e1e1 0px,
-    #0000 2px,
-    #0000 31px
-  );
+  background: repeating-linear-gradient(to top, #e1e1e1 1px, #0000 3px 32px);
 
   // background: repeating-linear-gradient(#fafafa 29px, #e1e1e1 31px);
 }
@@ -244,13 +239,13 @@ a {
 @media screen and (min-width: 768px) {
   .slider__text-box {
     max-width: 620px;
-    padding: 37px 6px 44px 6px;
+    padding: 37px 6px 36px 6px;
   }
   .slider__text {
     font-size: 14px;
     line-height: 30px;
     padding-left: 45px;
-    padding-right: 50px;
+    padding-right: 49px;
 
     background: repeating-linear-gradient(
       to top,
