@@ -229,6 +229,11 @@
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(161, 214, 140, 0.1);
 
+  @media screen and (max-width: 479.9px) {
+        width: 95vw;
+        height: auto;
+  }
+
   background-image:url(../images/about/desktop/about-back.png),linear-gradient(#fff,#fff);
   background-repeat: no-repeat;
   background-size: 415px 550px;
@@ -255,6 +260,28 @@
     cursor: pointer;
     fill: var(--primary_color);
   }
+}
+
+.contacts-form__maps {
+  @media screen and (max-width: 479.9px) {
+  position: relative;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
+
+    & iframe {
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      height: 100%;
+    }
+  }
+
 }
 
 .contacts-form {
