@@ -61,3 +61,16 @@
     location.modal.classList.toggle('is-hidden');
   }
 })();
+
+(() => {
+  const about = {
+    openModalBtn: document.querySelector('[read-more-open]'),
+    closeModalBtn: document.querySelector('[read-more-close]'),
+    modal: document.querySelector('[read-more]'),
+  };
+  about.openModalBtn.addEventListener('click', toggleModal);
+  about.closeModalBtn.addEventListener('click', toggleModal);
+  function toggleModal() {
+    about.modal.classList.toggle('is-hidden');
+  }
+})();

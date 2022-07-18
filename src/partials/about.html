@@ -1,58 +1,119 @@
 <section class="section about" id="about">
-    <div class="container about-container">
-        <p class="suptitle about-suptitle">tradition and love</p>
-        <h2 class="title about-title">how it’s made?</h2>
-        <div class="about-content-wrapper">
-        <picture class="about-picture">
-            <source srcset="./images/about/desktop/cow-about.webp 1x, ./images/about/desktop/cow-about@2x.webp 2x"
-                media="(min-width: 1200px)" 
-                type="image/webp" 
-                />
-            <source srcset="./images/about/desktop/cow-about.png 1x, ./images/about/desktop/cow-about@2x.png 2x"
-                media="(min-width: 1200px)" 
-                />
-            <source srcset="./images/about/tablet/cow-about-tab.webp 1x, ./images/about/tablet/cow-about-tab@2x.webp 2x"
-                media="(min-width: 768px)" 
-                type="image/webp" 
-                />
-            <source srcset="./images/about/tablet/cow-about-tab.png 1x, ./images/about/tablet/cow-about-tab@2x.png 2x"
-                media="(min-width: 768px)" 
-                />
-            <source srcset="./images/about/mobile/cow-about-mob.webp 1x, ./images/about/mobile/cow-about-mob@2x.webp 2x"
-                media="(max-width: 767px)" 
-                type="image/webp" 
-                />
-            <source srcset="./images/about/mobile/cow-about-mob.png 1x, ./images/about/mobile/cow-about-mob@2x.png 2x"
-                media="(max-width: 767px)" 
-                />
-            <img src="./images/about/mobile/cow-about-mob.png" alt="cow with milk" class="about-image">
-        </picture>
-        <div class="about-text-button-wrapper">
+  <div class="container about-container">
+    <p class="suptitle about-suptitle">tradition and love</p>
+    <h2 class="title about-title">how it’s made?</h2>
+    <div class="about-content-wrapper">
+      <picture class="about-picture">
+        <source
+          srcset="
+            ./images/about/desktop/cow-about.webp    1x,
+            ./images/about/desktop/cow-about@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/desktop/cow-about.png    1x,
+            ./images/about/desktop/cow-about@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/about/tablet/cow-about-tab.webp    1x,
+            ./images/about/tablet/cow-about-tab@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/tablet/cow-about-tab.png    1x,
+            ./images/about/tablet/cow-about-tab@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/about/mobile/cow-about-mob.webp    1x,
+            ./images/about/mobile/cow-about-mob@2x.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/mobile/cow-about-mob.png    1x,
+            ./images/about/mobile/cow-about-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/about/mobile/cow-about-mob.png"
+          alt="cow with milk"
+          class="about-image"
+        />
+      </picture>
+      <div class="about-text-button-wrapper">
         <ul class="about-list">
-            <li class="about-text-list__item">
-                <p class="about-list__text about-list__text--black">
-                    Our milk is produced on the farm, supplied by our own herd cows and their clever self-milking machines.
-                    <br>
-                    <br>
-                    DO ALL ICE CREAMS CONTAIN CREAM?
-                </p>
-            </li>
-            <li class="about-text-list__item">
-                <p class="about-list__text">
-                    NO, if you want your ice cream to have cream in it, then you should choose one called a dairy ice cream AND check out
-                    the ingredients.
-                </p>
-            </li>
+          <li class="about-text-list__item">
+            <p class="about-list__text about-list__text--black">
+              Our milk is produced on the farm, supplied by our own herd cows
+              and their clever self-milking machines.
+              <br />
+              <br />
+              DO ALL ICE CREAMS CONTAIN CREAM?
+            </p>
+          </li>
+          <li class="about-text-list__item">
+            <p class="about-list__text">
+              NO, if you want your ice cream to have cream in it, then you
+              should choose one called a dairy ice cream AND check out the
+              ingredients.
+            </p>
+          </li>
         </ul>
-        <button class="about-button" type="button">
-            <span class="about-button__content">
-                <span class="about-button__text">Read more</span>
-                <svg class="about-button__icon">
-                    <use href="./images/sprite.svg#arrow"></use>
-                </svg>
-            </span>
+        <button class="about-button" type="button" read-more-open>
+          <span class="about-button__content">
+            <span class="about-button__text">Read more</span>
+            <svg class="about-button__icon">
+              <use href="./images/sprite.svg#arrow"></use>
+            </svg>
+          </span>
         </button>
-        </div>
-        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- MODAL READ MORE -->
+  <div class="backdrop is-hidden" read-more>
+    <div class="read-more__modal">
+      <button type="button" class="read-more__close-button" read-more-close>
+        <svg class="contacts-modal__close-button__icon" width="18" height="18">
+          <use href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <form class="read-more__form">
+        <p class="read-more__title">
+          DO ALL ICE CREAMS <br />
+          CONTAIN CREAM?
+        </p>
+        <p class="read-more__text">
+          NO, if you want your ice cream to have cream in it, then you should
+          choose one called a dairy ice cream AND check out the ingredients. The
+          creaminess in dairy ice cream comes from its milk fat content, which
+          can come from using fresh milk and cream like we do in our “real dairy
+          ice cream”. It may also come from rehydrated skimmed milk powder, milk
+          solids or whey (left over when making cheese) as you will find in some
+          other dairy ice cream products. Many people are surprised to learn
+          that not all ice creams actually contain milk and cream – indeed, some
+          vanilla ice creams do not contain any vanilla, cream or milk! In order
+          to be labelled “Ice Cream”, the requirement is only that the product
+          contains 5% fat – so some companies use vegetable oil – a cheaper
+          ingredient than fresh dairy
+        </p>
+      </form>
+    </div>
+  </div>
 </section>
