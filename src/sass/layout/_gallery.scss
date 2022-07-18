@@ -1,31 +1,3 @@
-// .gallery {
-//   background-image: linear-gradient(#fff5f6 14%, #fff 14%);
-//   padding-top: 0;
-
-//   @media screen and(min-width:768px) {
-//     background-image: linear-gradient(#fff5f6 48%, #fff 48%);
-//   }
-
-//   @media screen and(min-width:1200px) {
-//     background-image: linear-gradient(#fff5f6 27%, #fff 27%);
-//     padding-top: 60px;
-//   }
-// }
-
-// .gallery__container {
-//   margin: 0 auto;
-//   max-width: 480px;
-
-//   @media screen and(min-width:768px) {
-//     max-width: 768px;
-//   }
-
-//   @media screen and(min-width:1200px) {
-//     max-width: 1013px;
-//     margin: 0 auto;
-//   }
-// }
-
 .gallery {
   background-image: linear-gradient(#fff5f6 14%, #fff 14%);
   padding-top: 0;
@@ -53,7 +25,8 @@
     margin: 0 auto;
   }
 }
-.grid {
+
+.gallery__grid {
   color: #3d1e37;
   box-sizing: border-box;
   margin: 0;
@@ -69,226 +42,160 @@
   max-width: 320px;
   height: 136px;
 }
-
-.grid-item1 {
+.gallery__grid-style {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gallery__grid-items {
   height: 43px;
   width: 43px;
+}
+
+.gallery__grid-item1 {
   top: 45px;
   left: 0px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item2 {
-  height: 43px;
-  width: 43px;
+.gallery__grid-item2 {
   top: 28px;
   left: 46px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item3 {
+.gallery__grid-item3 {
   height: 89px;
   width: 89px;
   top: 0px;
   left: 92px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item4 {
-  height: 43px;
-  width: 43px;
+.gallery__grid-item4 {
   top: 31px;
   left: 184px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item5 {
-  height: 43px;
-  width: 43px;
+.gallery__grid-item5 {
   top: 20px;
   left: 230px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item6 {
-  height: 43px;
-  width: 43px;
+.gallery__grid-item6 {
   top: 49px;
   left: 276px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item7 {
-  height: 43px;
-  width: 43px;
+.gallery__grid-item7 {
   bottom: 18px;
   left: 46px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item8 {
-  height: 43px;
-  width: 43px;
+.gallery__grid-item8 {
   bottom: 0px;
   left: 92px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item9 {
-  height: 43px;
-  width: 43px;
+.gallery__grid-item9 {
   bottom: 14px;
   left: 184px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.grid-item10 {
-  height: 43px;
-  width: 43px;
+.gallery__grid-item10 {
   bottom: 25px;
   left: 230px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
-  .grid {
+  .gallery__grid {
     max-width: 768px;
     height: 326px;
   }
-  .grid-item1 {
+  .gallery__grid-items {
     height: 105px;
     width: 105px;
+  }
+  .gallery__grid-item1 {
     top: 108px;
     left: 0px;
   }
-  .grid-item2 {
-    height: 105px;
-    width: 105px;
+  .gallery__grid-item2 {
     top: 67px;
     left: 111px;
   }
-  .grid-item3 {
+  .gallery__grid-item3 {
     height: 215px;
     width: 215px;
     top: 0px;
     left: 221px;
   }
-  .grid-item4 {
-    height: 105px;
-    width: 105px;
+  .gallery__grid-item4 {
     top: 75px;
     left: 442px;
   }
-  .grid-item5 {
-    height: 105px;
-    width: 105px;
+  .gallery__grid-item5 {
     top: 50px;
     left: 552px;
   }
-  .grid-item6 {
-    height: 105px;
-    width: 105px;
+  .gallery__grid-item6 {
     top: 117px;
     left: 663px;
   }
-  .grid-item7 {
-    height: 105px;
-    width: 105px;
+  .gallery__grid-item7 {
     bottom: 44px;
     left: 110px;
   }
-  .grid-item8 {
-    height: 105px;
-    width: 105px;
+  .gallery__grid-item8 {
     bottom: 0px;
     left: 221px;
   }
-  .grid-item9 {
-    height: 105px;
-    width: 105px;
+  .gallery__grid-item9 {
     bottom: 35px;
     left: 441px;
   }
-  .grid-item10 {
-    height: 105px;
-    width: 105px;
+  .gallery__grid-item10 {
     bottom: 60px;
     left: 552px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .grid {
+  .gallery__grid {
     max-width: 1013px;
     height: 430px;
   }
-  .grid-item1 {
+  .gallery__grid-items {
     height: 138px;
     width: 138px;
+  }
+
+  .gallery__grid-item1 {
     top: 142px;
     left: 0px;
   }
-  .grid-item2 {
-    height: 138px;
-    width: 138px;
+  .gallery__grid-item2 {
     top: 88px;
     left: 146px;
   }
-  .grid-item3 {
+  .gallery__grid-item3 {
     height: 283px;
     width: 283px;
     top: 0px;
     left: 292px;
   }
-  .grid-item4 {
-    height: 138px;
-    width: 138px;
+  .gallery__grid-item4 {
     top: 98px;
     left: 583px;
   }
-  .grid-item5 {
-    height: 138px;
-    width: 138px;
+  .gallery__grid-item5 {
     top: 65px;
     left: 729px;
   }
-  .grid-item6 {
-    height: 138px;
-    width: 138px;
+  .gallery__grid-item6 {
     top: 154px;
     left: 875px;
   }
-  .grid-item7 {
-    height: 138px;
-    width: 138px;
+  .gallery__grid-item7 {
     bottom: 57px;
     left: 146px;
   }
-  .grid-item8 {
-    height: 138px;
-    width: 138px;
+  .gallery__grid-item8 {
     bottom: 0px;
     left: 292px;
   }
-  .grid-item9 {
-    height: 138px;
-    width: 138px;
+  .gallery__grid-item9 {
     bottom: 45px;
     left: 582px;
   }
-  .grid-item10 {
-    height: 138px;
-    width: 138px;
+  .gallery__grid-item10 {
     bottom: 78px;
     left: 729px;
   }
