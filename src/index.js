@@ -38,14 +38,14 @@
 
 
 (() => {
-  const about = {
+  const about_hero = {
     openModalBtn: document.querySelector("[data-hero-about-open]"),
     modal: document.querySelector("[data-hero-about]"),
   };
 
-  about.openModalBtn.addEventListener("click", toggleModal);
+  about_hero.openModalBtn.addEventListener("click", toggleModal);
   function toggleModal() {
-    about.modal.classList.toggle("is-hidden");
+    about_hero.modal.classList.toggle("is-hidden");
   }
 })();
 
